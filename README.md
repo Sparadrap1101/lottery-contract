@@ -1,3 +1,1 @@
 # lottery-contract
-
-.
