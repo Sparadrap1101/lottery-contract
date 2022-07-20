@@ -66,7 +66,7 @@ contract Lottery is VRFConsumerBaseV2, KeeperCompatibleInterface {
 
     /**
      * @dev This is the function where you enter in the lottery.
-     * You need to have enough entrance fees and the lottery to be open.
+     * You need to have enough entrance fees and the lottery being open.
      */
     function enterLottery() public payable {
         if (msg.value < i_entranceFee) {
