@@ -22,7 +22,7 @@ contract Lottery is VRFConsumerBaseV2, KeeperCompatibleInterface {
     enum LotteryState {
         OPEN,
         CALCULATING
-    }
+    } // uint256: 0 = OPEN, 1 = CALCULATING
 
     /* State Variables */
     uint256 private immutable i_entranceFee;
@@ -180,5 +180,9 @@ contract Lottery is VRFConsumerBaseV2, KeeperCompatibleInterface {
 
     function getRequestConfirmations() public pure returns (uint256) {
         return REQUEST_CONFIRMATIONS;
+    }
+
+    function getInterval() public view returns (uint256) {
+        return i_interval;
     }
 }
