@@ -14,7 +14,7 @@ error Lottery__UpkeepNotNeeded(uint256 currentBalance, uint256 numPlayers, uint2
 /** @title A sample lottery contract
  *  @author Alexis Cerio (Patrick Collins's tutorial)
  *  @notice This contract is for creating an untamperable decentralized smart contract
- *  @dev This implement Chainlink VRF v2 and Chainlink Keepers
+ *  @dev This implement Chainlink VRF v2 and Chainlink Keepers.
  */
 
 contract Lottery is VRFConsumerBaseV2, KeeperCompatibleInterface {
