@@ -3,3 +3,6 @@ yarn.lock
 artifacts
 cache
 .env
+gas-report.txt
+coverage
+coverage.json
